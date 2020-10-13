@@ -1,0 +1,103 @@
+git commit -am ""
+git push
+
+<html>
+var deDom = document.getElementsByTagName("html");
+console.log(deDom);
+</html>
+
+<style>
+textarea{background : green;}
+</style>
+
+<script>
+</script>
+
+hoi daar <b> gaan we </b>
+
+extra zin
+
+extra zin
+
+laatste zin
+
+<h1> nog iets </h1>
+<textarea cols="20"
+
+
+##############################
+
+<head>
+    <style>
+      textarea{
+        background-color: aqua;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      function ietsproberen(){
+        var getal1 = 16;
+        var woord = 'mijn woord';
+        alert(woord);
+        console.log(getal1*getal1);
+        var eenElem = document.getElementById("dikgedrukt");
+        console.log(eenElem);
+        document.getElementById("dikgedrukt").innerHTML = "You made a big mistake"
+      }
+      function een_invoer(invoer){
+        document.getElementById("dikgedrukt").innerHTML = document.getElementById("invoer").value
+      }
+    
+    </script>
+  </head>
+  <body>
+    Geef uw naam <br></br>
+    <input type=text id=invoer onkeydown="een_invoer">
+    <br> Hoi <b id=dikgedrukt>BramW</b> </br>
+    <br> Ik ben binnen bramW </br>
+    <h1 onclick="ietsproberen()"> click here</h1>
+    <textarea cols=20></textarea>
+  </body>
+
+
+################################
+
+<style>
+</style>
+
+<script>
+  function herewego(){
+    console.log("in here we go");
+    var gt1 = document.getElementById("invoer_getal1").value
+    var gt2 = document.getElementById("invoer_getal2").value
+    
+    
+    var output = giveItToMe();// returntype
+    if(isNaN(gt1) || isNaN(gt2)){
+      alert("Een invoer is geen getal");
+    }else{
+      optellen(gt1, gt2);   // argument
+    }
+  }
+
+  function optellen(nummer, andernummer){   // parameter
+    console.log(nummer * andernummer);
+    document.getElementById("uitkomst").innerHTML = "<br>"+nummer*andernummer;
+  }
+
+  function giveItToMe(){
+    return 10;
+  }
+</script>
+Getal 1
+<input type=text id=invoer_getal1>
+<br>
+Getal 2
+<input type=text id=invoer_getal2>
+<br>
+<input type=button onclick=herewego() value="klikhier">
+<br>
+<div id=uitkomst>uitkomst</div>
